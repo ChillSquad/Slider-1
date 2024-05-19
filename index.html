@@ -3,7 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scroller</title>
+    <title>Slider</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar" id="bar">
+        <div style="">
+          <h1>Orange</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            impedit laboriosam est ut commodi sit! Earum assumenda sapiente hic
+            alias.
+          </p>
+        </div>
+
+        <div style="">
+          <h1>Green</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            impedit laboriosam est ut commodi sit! Earum assumenda sapiente hic
+            alias.
+          </p>
+        </div>
+
+        <div style="">
+          <h1>Blue</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            impedit laboriosam est ut commodi sit! Earum assumenda sapiente hic
+            alias.
+          </p>
+        </div>
+
+        <div style="">
+          <h1>Red</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            impedit laboriosam est ut commodi sit! Earum assumenda sapiente hic
+            alias.
+          </p>
+        </div>
+      </div>
+
+      <div class="main-slide" id="slide">
+        <div
+          style="
+            background-image: url('https://images.unsplash.com/photo-1563559776084-759c4c52567f?q=80&w=1929&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+          "
+        ></div>
+        <div
+          style="
+            background-image: url('https://images.unsplash.com/photo-1594002348772-bc0cb57ade8b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+          "
+        ></div>
+        <div
+          style="
+            background-image: url('https://images.unsplash.com/photo-1691731982394-c8bdd16b81eb?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+          "
+        ></div>
+        <div
+          style="
+            background-image: url('https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+          "
+        ></div>
+      </div>
+
+      <div class="controls">
+        <form action="#">
+          <button class="up-button" id="up">UP</button>
+          <button class="down-button" id="down">DOWN</button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
