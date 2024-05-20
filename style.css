@@ -112,3 +112,51 @@ button:active {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+
+@media screen and (max-width: 1500px) {
+  .sidebar > div p {
+    width: 60%;
+    display: block;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .sidebar > div p {
+    width: 60%;
+    display: block;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    font-style: italic;
+  }
+  .sidebar {
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .main-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 40%;
+    width: 70%;
+    transition: transform 500ms ease-in-out;
+  }
+  .controls button {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    z-index: 100;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .sidebar > div p {
+    display: none;
+  }
+}
