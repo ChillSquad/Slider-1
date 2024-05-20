@@ -159,3 +159,12 @@ button:focus {
     display: none;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .sidebar h1 {
+    font-size: 28px;
+  }
+  button {
+    padding: 0;
+  }
+}
