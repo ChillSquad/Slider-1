@@ -76,7 +76,7 @@ button {
   border: none;
   color: #aaa;
   font-size: 32px;
-  padding: 5px 15px;
+  padding: 5px 10px;
   font-weight: 900;
   cursor: pointer;
   transition: all 50ms ease-in-out;
@@ -90,9 +90,9 @@ button:active {
   font-size: 33px;
 }
 
-/* button:focus {
+button:focus {
   outline: none;
-} */
+}
 
 .controls button {
   position: absolute;
@@ -102,15 +102,14 @@ button:active {
 }
 
 .wrapper .controls .down-button {
-  transform: translateX(-100%);
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .wrapper .controls .up-button {
-  transform: translateY(-100%);
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  transform: translateX(-100%) translateY(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 @media screen and (max-width: 1500px) {
