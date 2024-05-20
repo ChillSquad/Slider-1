@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sidebar {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* transition: transform 500ms ease-in-out; */
+}
+
+.sidebar > div {
+  width: 100%;
+  height: 100%;
+  /* color: #fff; */
+  /* Расположить объект по центру экрана */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.sidebar > div p {
+  width: 75%;
+  display: block;
+  margin: 0 auto 0 auto;
+}
+
+.sidebar h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: -30px;
+}
+
+.main-slide {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 70%;
+  transition: transform 500ms ease-in-out;
+}
+
+.main-slide > div {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  color: #aaa;
+  font-size: 32px;
+  padding: 5px 15px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #222;
+}
+
+button:focus {
+  outline: none;
+}
+
+.controls button {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  z-index: 100;
+}
+
+.wrapper .controls .down-button {
+  transform: translateX(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.wrapper .controls .up-button {
+  transform: translateY(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
